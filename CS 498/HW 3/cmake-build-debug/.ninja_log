@@ -1,0 +1,6 @@
+# ninja log v5
+1	198	1695959171911406536	CMakeFiles/HW_3.dir/tests/tests_main.cpp.o	acdb04e5d4b4b064
+673	844	1695959172557211371	HW_3	b633b279a480c8d4
+1	672	1695959172387001908	CMakeFiles/HW_3.dir/main.cpp.o	622615cf4dfd8376
+25	582	1696036723887969730	CMakeFiles/HW_3.dir/reversed.cpp.o	c708c3dcc88128bf
+7	5762	1696037778938787583	CMakeFiles/HW_3.dir/tests/tests_main.cpp.o	acdb04e5d4b4b064

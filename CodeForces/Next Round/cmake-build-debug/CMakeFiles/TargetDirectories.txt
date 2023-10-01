@@ -1,0 +1,3 @@
+/Users/athanjohnson/Documents/Coding Projects/CodeForces/Next Round/cmake-build-debug/CMakeFiles/Next_Round.dir
+/Users/athanjohnson/Documents/Coding Projects/CodeForces/Next Round/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/athanjohnson/Documents/Coding Projects/CodeForces/Next Round/cmake-build-debug/CMakeFiles/rebuild_cache.dir

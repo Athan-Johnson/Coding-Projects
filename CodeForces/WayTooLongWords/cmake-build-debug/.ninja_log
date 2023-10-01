@@ -1,0 +1,16 @@
+# ninja log v5
+0	62	1694881665856108285	build.ninja	b8504c3b1cb48241
+0	645	1694881666502690037	CMakeFiles/WayTooLongWords.dir/main.cpp.o	fbb5fd0e66be7a14
+647	702	1694881666565403212	WayTooLongWords	89e6fa91aa4b1eb6
+6	602	1694881726896967411	CMakeFiles/WayTooLongWords.dir/main.cpp.o	fbb5fd0e66be7a14
+603	650	1694881726947235814	WayTooLongWords	89e6fa91aa4b1eb6
+7	670	1694881778685358196	CMakeFiles/WayTooLongWords.dir/main.cpp.o	fbb5fd0e66be7a14
+670	720	1694881778739363746	WayTooLongWords	89e6fa91aa4b1eb6
+7	316	1694881800432395081	CMakeFiles/WayTooLongWords.dir/main.cpp.o	fbb5fd0e66be7a14
+316	354	1694881800471716030	WayTooLongWords	89e6fa91aa4b1eb6
+6	317	1694881828968177965	CMakeFiles/WayTooLongWords.dir/main.cpp.o	fbb5fd0e66be7a14
+317	354	1694881829007459291	WayTooLongWords	89e6fa91aa4b1eb6
+6	589	1694881863528737396	CMakeFiles/WayTooLongWords.dir/main.cpp.o	fbb5fd0e66be7a14
+590	641	1694881863583212303	WayTooLongWords	89e6fa91aa4b1eb6
+6	614	1694881939531938545	CMakeFiles/WayTooLongWords.dir/main.cpp.o	fbb5fd0e66be7a14
+615	668	1694881939588029641	WayTooLongWords	89e6fa91aa4b1eb6
