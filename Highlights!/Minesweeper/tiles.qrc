@@ -1,0 +1,18 @@
+<RCC>
+    <qresource prefix="/">
+        <file alias="empty.png">Minesweeper_LAZARUS_21x21/Minesweeper_LAZARUS_21x21_0.png</file>
+        <file alias="one.png">Minesweeper_LAZARUS_21x21/Minesweeper_LAZARUS_21x21_1.png</file>
+        <file alias="two.png">Minesweeper_LAZARUS_21x21/Minesweeper_LAZARUS_21x21_2.png</file>
+        <file alias="three.png">Minesweeper_LAZARUS_21x21/Minesweeper_LAZARUS_21x21_3.png</file>
+        <file alias="four.png">Minesweeper_LAZARUS_21x21/Minesweeper_LAZARUS_21x21_4.png</file>
+        <file alias="five.png">Minesweeper_LAZARUS_21x21/Minesweeper_LAZARUS_21x21_5.png</file>
+        <file alias="six.png">Minesweeper_LAZARUS_21x21/Minesweeper_LAZARUS_21x21_6.png</file>
+        <file alias="seven.png">Minesweeper_LAZARUS_21x21/Minesweeper_LAZARUS_21x21_7.png</file>
+        <file alias="eight.png">Minesweeper_LAZARUS_21x21/Minesweeper_LAZARUS_21x21_8.png</file>
+        <file alias="clock.png">Minesweeper_LAZARUS_21x21/Minesweeper_LAZARUS_21x21_clock.png</file>
+        <file alias="flag.png">Minesweeper_LAZARUS_21x21/Minesweeper_LAZARUS_21x21_flag.png</file>
+        <file alias="mine_hit.png">Minesweeper_LAZARUS_21x21/Minesweeper_LAZARUS_21x21_mine_hit.png</file>
+        <file alias="mine.png">Minesweeper_LAZARUS_21x21/Minesweeper_LAZARUS_21x21_mine.png</file>
+        <file alias="unexplored.png">Minesweeper_LAZARUS_21x21/Minesweeper_LAZARUS_21x21_unexplored.png</file>
+    </qresource>
+</RCC>

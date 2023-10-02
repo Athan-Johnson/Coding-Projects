@@ -1,0 +1,35 @@
+{
+	"BUILD_DIR" : "/Users/athanjohnson/Documents/GitHub/Coding-Projects/Highlights!/Minesweeper/cmake-build-debug/minesweeper_autogen",
+	"CMAKE_BINARY_DIR" : "/Users/athanjohnson/Documents/GitHub/Coding-Projects/Highlights!/Minesweeper/cmake-build-debug",
+	"CMAKE_CURRENT_BINARY_DIR" : "/Users/athanjohnson/Documents/GitHub/Coding-Projects/Highlights!/Minesweeper/cmake-build-debug",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/Users/athanjohnson/Documents/GitHub/Coding-Projects/Highlights!/Minesweeper",
+	"CMAKE_SOURCE_DIR" : "/Users/athanjohnson/Documents/GitHub/Coding-Projects/Highlights!/Minesweeper",
+	"INCLUDE_DIR" : "/Users/athanjohnson/Documents/GitHub/Coding-Projects/Highlights!/Minesweeper/cmake-build-debug/minesweeper_autogen/include",
+	"INPUTS" : 
+	[
+		"/Users/athanjohnson/Documents/GitHub/Coding-Projects/Highlights!/Minesweeper/Minesweeper_LAZARUS_21x21/Minesweeper_LAZARUS_21x21_2.png",
+		"/Users/athanjohnson/Documents/GitHub/Coding-Projects/Highlights!/Minesweeper/Minesweeper_LAZARUS_21x21/Minesweeper_LAZARUS_21x21_8.png",
+		"/Users/athanjohnson/Documents/GitHub/Coding-Projects/Highlights!/Minesweeper/Minesweeper_LAZARUS_21x21/Minesweeper_LAZARUS_21x21_flag.png",
+		"/Users/athanjohnson/Documents/GitHub/Coding-Projects/Highlights!/Minesweeper/Minesweeper_LAZARUS_21x21/Minesweeper_LAZARUS_21x21_6.png",
+		"/Users/athanjohnson/Documents/GitHub/Coding-Projects/Highlights!/Minesweeper/Minesweeper_LAZARUS_21x21/Minesweeper_LAZARUS_21x21_1.png",
+		"/Users/athanjohnson/Documents/GitHub/Coding-Projects/Highlights!/Minesweeper/Minesweeper_LAZARUS_21x21/Minesweeper_LAZARUS_21x21_clock.png",
+		"/Users/athanjohnson/Documents/GitHub/Coding-Projects/Highlights!/Minesweeper/Minesweeper_LAZARUS_21x21/Minesweeper_LAZARUS_21x21_7.png",
+		"/Users/athanjohnson/Documents/GitHub/Coding-Projects/Highlights!/Minesweeper/Minesweeper_LAZARUS_21x21/Minesweeper_LAZARUS_21x21_3.png",
+		"/Users/athanjohnson/Documents/GitHub/Coding-Projects/Highlights!/Minesweeper/Minesweeper_LAZARUS_21x21/Minesweeper_LAZARUS_21x21_0.png",
+		"/Users/athanjohnson/Documents/GitHub/Coding-Projects/Highlights!/Minesweeper/Minesweeper_LAZARUS_21x21/Minesweeper_LAZARUS_21x21_4.png",
+		"/Users/athanjohnson/Documents/GitHub/Coding-Projects/Highlights!/Minesweeper/Minesweeper_LAZARUS_21x21/Minesweeper_LAZARUS_21x21_unexplored.png",
+		"/Users/athanjohnson/Documents/GitHub/Coding-Projects/Highlights!/Minesweeper/Minesweeper_LAZARUS_21x21/Minesweeper_LAZARUS_21x21_mine_hit.png",
+		"/Users/athanjohnson/Documents/GitHub/Coding-Projects/Highlights!/Minesweeper/Minesweeper_LAZARUS_21x21/Minesweeper_LAZARUS_21x21_mine.png",
+		"/Users/athanjohnson/Documents/GitHub/Coding-Projects/Highlights!/Minesweeper/Minesweeper_LAZARUS_21x21/Minesweeper_LAZARUS_21x21_5.png"
+	],
+	"LOCK_FILE" : "/Users/athanjohnson/Documents/GitHub/Coding-Projects/Highlights!/Minesweeper/cmake-build-debug/CMakeFiles/minesweeper_autogen.dir/AutoRcc_tiles_EWIEGA46WW_Lock.lock",
+	"MULTI_CONFIG" : false,
+	"OPTIONS" : [ "-name", "tiles" ],
+	"OUTPUT_CHECKSUM" : "EWIEGA46WW",
+	"OUTPUT_NAME" : "qrc_tiles.cpp",
+	"RCC_EXECUTABLE" : "/Users/athanjohnson/Qt/6.4.2/macos/./libexec/rcc",
+	"RCC_LIST_OPTIONS" : [ "--list" ],
+	"SETTINGS_FILE" : "/Users/athanjohnson/Documents/GitHub/Coding-Projects/Highlights!/Minesweeper/cmake-build-debug/CMakeFiles/minesweeper_autogen.dir/AutoRcc_tiles_EWIEGA46WW_Used.txt",
+	"SOURCE" : "/Users/athanjohnson/Documents/GitHub/Coding-Projects/Highlights!/Minesweeper/tiles.qrc",
+	"VERBOSITY" : 0
+}

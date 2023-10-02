@@ -1,0 +1,14 @@
+# ninja log v5
+0	387	1696206542393615002	minesweeper_autogen/timestamp	f0b60bc2dcfc6b81
+0	387	1696206542393615002	minesweeper_autogen/mocs_compilation.cpp	f0b60bc2dcfc6b81
+0	387	1696206542393615002	/Users/athanjohnson/Documents/GitHub/Coding-Projects/Highlights!/Minesweeper/cmake-build-debug/minesweeper_autogen/timestamp	f0b60bc2dcfc6b81
+0	387	1696206542393615002	/Users/athanjohnson/Documents/GitHub/Coding-Projects/Highlights!/Minesweeper/cmake-build-debug/minesweeper_autogen/mocs_compilation.cpp	f0b60bc2dcfc6b81
+387	404	1696206542417451725	minesweeper_autogen/EWIEGA46WW/qrc_tiles.cpp	4d8468e7057661eb
+387	404	1696206542417451725	/Users/athanjohnson/Documents/GitHub/Coding-Projects/Highlights!/Minesweeper/cmake-build-debug/minesweeper_autogen/EWIEGA46WW/qrc_tiles.cpp	4d8468e7057661eb
+405	456	1696206542468106044	CMakeFiles/minesweeper.dir/minesweeper_autogen/EWIEGA46WW/qrc_tiles.cpp.o	e04e819a66707a9d
+404	1097	1696206543103602684	CMakeFiles/minesweeper.dir/tile.cpp.o	f0ae6e859eef5df5
+404	1191	1696206543199890289	CMakeFiles/minesweeper.dir/tilebutton.cpp.o	4f4f709f08556859
+404	1243	1696206543251358906	CMakeFiles/minesweeper.dir/main.cpp.o	512039a0b7d3c323
+404	1266	1696206543275298334	CMakeFiles/minesweeper.dir/minesweeper_autogen/mocs_compilation.cpp.o	828f486b3b2e4e30
+404	1404	1696206543413330432	CMakeFiles/minesweeper.dir/mainwindow.cpp.o	7b0c56f530c3adff
+1404	1509	1696206543519106254	minesweeper	8ce6780949923631
