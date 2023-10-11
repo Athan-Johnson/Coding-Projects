@@ -109,6 +109,14 @@ def genetic_algorithms(knapsack_items, population_size, iterations_cap, mutation
             mutated_individual = mutate(selected_individual)
             next_generation.append(mutated_individual)
 
+        # get the elites
+        for _ in range(number_of_elites):
+            elite_value = max(population_fitness)
+            elite_index = population_fitness.index(elite_value)
+            elite = population[elite_index]
+            next_generation.append(elite)
+            population.remove(elite)
+
         population = next_generation
 
     best_fitness = 0
