@@ -83,7 +83,6 @@ def genetic_algorithms(knapsack_items, population_size, iterations_cap, mutation
         population = next_generation
 
     best_fitness = 0
-    best_fitness_index = 0
     for individual in population:
         fitness = evaluate_fitness(knapsack_items, individual, knapsack_size)
         if fitness > best_fitness:
@@ -95,10 +94,17 @@ def genetic_algorithms(knapsack_items, population_size, iterations_cap, mutation
 
 if __name__ == '__main__':
     # knapsack_items = make_knapsack_items(10, 0, 20, 2, 5)
-    names = ['laptop', 'phone', 'wallet', 'ipad', 'Kyle']
-    knapsack_items = [[2, 1, 1, 1, 3],
-                      [100, 1000, 2, 50, 1000]]
-    optimal_items = genetic_algorithms(knapsack_items, 100, 1000, 0.25, 3)
+
+    min_weight = 1
+    max_weight = 20
+    min_value = 10
+    max_value = 100
+
+
+    names = ['Laptop', 'Smartphone', 'Wallet', 'Tablet', 'Sunglasses', 'Water Bottle', 'Passport', 'Headphones', 'Camera', 'Charger', 'Umbrella', 'Notebook', 'Power Bank', 'Keys', 'Snacks', 'Towel', 'Sunscreen', 'Book', 'Toothbrush', 'Toothpaste', 'First Aid Kit', 'Maps', 'Multi-tool', 'Hat', 'Jacket', 'Sunglasses Case', 'Flashlight', 'Raincoat', 'Wallet', 'Identification', 'Hand Sanitizer', 'Tissues', 'Earplugs', 'Hairbrush', 'Comb', 'Sun Hat', 'Insect Repellent', 'Travel Pillow', 'Earbuds', 'Handheld Fan', 'Portable Speaker', 'Notepad', 'Pen', 'Cash', 'Band-Aids', 'Swiss Army Knife', 'Poncho', 'Travel Adapter', 'Face Mask', 'Travel Guides', 'Glasses']
+    knapsack_items = [[5, 0.2, 0.1, 2, 0.05, 0.3, 0.1, 0.2, 1, 0.1, 0.3, 0.2, 0.3, 0.05, 0.2, 0.5, 0.1, 0.5, 0.05, 0.05, 0.5, 0.2, 0.3, 0.1, 0.7, 0.05, 0.1, 0.5, 0.1, 0.05, 0.1, 0.05, 0.01, 0.1, 0.05, 0.1, 0.05, 0.3, 0.02, 0.2, 0.3, 0.2, 0.01, 0.01, 0.05, 0.1, 0.3, 0.1, 0.02, 0.5, 0.2],
+                      [1000, 500, 50, 300, 2000, 30, 100, 200, 300, 50, 30, 10, 50, 10, 20, 30, 20, 10, 5, 5, 50, 10, 20, 10, 100, 5, 10, 10, 30, 50, 10, 5, 5, 10, 5, 5, 10, 5, 10, 10, 30, 10, 30, 20, 10, 5, 5, 20, 10, 50, 1000]]
+    optimal_items = genetic_algorithms(knapsack_items, 200, 1000, 0.15, 50)
 
     for _ in range(len(names)):
         if optimal_items[_] == '1':
