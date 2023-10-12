@@ -116,6 +116,7 @@ def genetic_algorithms(knapsack_items, population_size, iterations_cap, mutation
             elite = population[elite_index]
             next_generation.append(elite)
             population.remove(elite)
+            population_fitness.pop(elite_index)
 
         population = next_generation
 
@@ -132,10 +133,10 @@ def genetic_algorithms(knapsack_items, population_size, iterations_cap, mutation
 
 if __name__ == '__main__':
 
-    population_size = 50
-    iterations_cap = 5000
-    mutation_rate = 0.05
-    number_of_elites = 2
+    population_size = 100
+    iterations_cap = 100
+    mutation_rate = 0.01
+    number_of_elites = 5
 
     # knapsack_items = make_knapsack_items(10, 0, 20, 2, 5)
 
