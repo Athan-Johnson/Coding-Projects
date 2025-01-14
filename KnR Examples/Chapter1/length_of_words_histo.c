@@ -48,6 +48,7 @@ int main()
 	// on the order of 5 digits or higher then you should increase this. Unfortunatlely printf won't allow a constant to be
 	// put in the %d statement so this must be changed manually. I also assume that no word will be longer than 99, so
 	// everything is done around four spaces. 
+	putchar('\n');
 	for (int i = most; i > 0; --i) // outer loop, for each row
 	{
 		printf("%4d |", i); // This prints the y-axis labels
