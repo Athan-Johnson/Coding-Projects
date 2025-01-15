@@ -27,10 +27,15 @@ int main()
 		{
 			putchar(c);
 			++numSpaces;
+			if (c == '\n')
+			{
+				numSpaces = 0;
+			}
 			if ((numSpaces / TAB_WIDTH) >= 1) // we have reached the length of a tab and need to realign
 			{
 				numSpaces = 0;
 			}
 		}
 	}
+	putchar('\n');
 }
