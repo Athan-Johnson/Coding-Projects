@@ -28,5 +28,6 @@ int main()
         else
             putchar(c); // everything else
 	}
-    printf("[EOF]"); // end of file
+	printf("[EOF]"); // end of file
+	putchar('\n');
 }
