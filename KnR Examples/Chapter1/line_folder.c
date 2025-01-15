@@ -45,7 +45,7 @@ int main()
 			else // it's a newline character
 			{
 				oneWord = TRUE;
-				++index;
+				index = 0;
 			}
 		}
 		else
@@ -74,8 +74,7 @@ int main()
 				{
 					word[i] = '\0';
 				}
-				index = wordLen;
-				wordLen = 0;
+				wordLen = index = 0;
 			}
 		}
 	}
