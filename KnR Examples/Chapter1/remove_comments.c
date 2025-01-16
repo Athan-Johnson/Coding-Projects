@@ -1,6 +1,7 @@
 /* This is a program that will remove all comments from a C program.
  * Author: Athan Johnson
  * Created: 1/15/2025
+ * Modified: 1/16/2025
  */
 
 #include <stdio.h>
