@@ -58,7 +58,7 @@ int main() {
 		{
 			if (c == '*')
 			{
-				prev_was_star == TRUE;
+				prev_was_star = TRUE;
 			}
 			else if (c == '/' && prev_was_star == TRUE)
 			{
