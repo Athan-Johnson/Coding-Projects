@@ -64,6 +64,10 @@ int main() {
 			{
 				ignore_until_end = prev_was_star = FALSE;
 			}
+			else
+			{
+				prev_was_star = FALSE;
+			}
 		}
 		else // in this case we have seen a "//" and are ignoring the line until '\n'
 		{
