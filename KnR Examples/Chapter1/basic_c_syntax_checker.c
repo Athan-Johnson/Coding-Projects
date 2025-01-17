@@ -26,16 +26,16 @@ int main()
 
 	// these are going to tell us if we're in a mode where we're just ignoring everything until told otherwise
 	int in_double_quote = FALSE; // if the file ends with either of these comment ones being TRUE there's a bug
-	int in single_quote = FALSE;
+	int in_single_quote = FALSE;
 	int in_line_comment = FALSE;
 	int in_block_comment = FALSE;
-	int expecting_single_quote == FALSE; // this one is because single quotes can only have one character in them
+	int expecting_single_quote = FALSE; // this one is because single quotes can only have one character in them
 
 	// these are to let us know if the previous letter was something that could be important
 	int in_escape_sequence = FALSE; // in a quote this tells us that the last letter was a "\"
-	int prev_was_backslash == FALSE; // when looking for comments this tells us that the last was a backslash, 
+	int prev_was_backslash = FALSE; // when looking for comments this tells us that the last was a backslash, 
 					 // an important prerequisite for both comments
-	int prev_was_star == FALSE; // in a block comment this lets us know that the last character was a star so if the current
+	int prev_was_star = FALSE; // in a block comment this lets us know that the last character was a star so if the current
 				    // is a "/" then we finished the block comment
 	
 	// this will help us to keep track of what line we're on so we know where to say the error lies
@@ -99,7 +99,7 @@ int main()
 		{
 			if (c == '\n')
 			{
-				in_line_comment = FALSE
+				in_line_comment = FALSE;
 			}
 		}
 		else if (in_block_comment == TRUE) // in this case we ignore all until "*/"
@@ -166,17 +166,17 @@ int main()
 			// parentheses
 			else if (c == '(')
 			{
-				open_pareneses++;
+				open_parentheses++;
 			}
 			else if (c == ')')
 			{
-				if (open_parenteses == 0)
+				if (open_parentheses == 0)
 				{
 					printf("Error! You have a closing parenteses with no open on on line %d.\n", current_line);
 				}
 				else
 				{
-					open_parenteses--;
+					open_parentheses--;
 				}
 			}
 
@@ -251,7 +251,7 @@ int main()
 // is 1-3 octal digits (from 0-7) and xhh is x followed by one or more hexadecimal digits (from 0-9 and A-F)
 int isValidEscapeSequence(char c)
 {
-	char valid_escape_chars = "abfnrtv\\\'\"?0"; // you may also want to include \e to this list
+	char *valid_escape_chars = "abfnrtv\\\'\"?0"; // you may also want to include \e to this list
 	char iter = 0;
 	char temp_c = ' ';
 
