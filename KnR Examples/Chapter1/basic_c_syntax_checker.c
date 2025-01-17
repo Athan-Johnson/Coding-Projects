@@ -60,6 +60,7 @@ int main()
 				{
 					printf("Error! You have an invalid escape sequence on line %d.\n", current_line);
 				}
+				in_escape_sequence = FALSE;
 			}
 			else if (c == '\\')
 			{
@@ -72,21 +73,25 @@ int main()
 			// if we aren't but are in an escape sequence we should expect one of a specific set of characters to appear
 			// if we aren't either of these but c is a \ then we are expecting an escape sequence character next
 			// if none of these are true then we just have some random character in the single quotes and should expect the closing one next
-			if (c != '\'' && expecting_single_quote == TRUE)
+			if (expecting_single_quote == TRUE)
 			{
-				printf("Error! You have an open single quote with no close, or more than one character between single quotes on line %d.\n", current_line);
+				if (c != '\'')
+				{
+					printf("Error! You have an open single quote with no close, or more than one character between single quotes on line %d.\n", current_line);
+				}
 				expecting_single_quote = FALSE;
 				in_single_quote = FALSE;
 			}
-			if (in_escape_sequence == TRUE)
+			else if (in_escape_sequence == TRUE)
 			{
 				if (isValidEscapeSequence(c) != TRUE)
 				{
 					printf("Error! You have an invalid escape sequence on line %d.\n", current_line);
 				}
 				expecting_single_quote = TRUE;
+				in_escape_sequence = FALSE;
 			}
-			else if (c == '\\') // this is the only case where having something after it that isn't a single quote is acceptable
+			else if (c == '\\') // this is the only case where having the next letter be something that isn't a single quote is acceptable
 			{
 				in_escape_sequence = TRUE;
 			}
@@ -205,7 +210,7 @@ int main()
 	// do our final checks to make sure that everything was resolved as it should have been
 	if (open_braces > 0)
 	{
-		printf("Error! There is an open brace with no brace to close it.\n");
+		printf("Error! There are %d braces with no brace to close it.\n", open_braces);
 	}
 	else if (open_braces < 0) // the logic of this code should never allow this to happen
 	{
@@ -213,7 +218,7 @@ int main()
 	}
 	if (open_brackets > 0)
 	{
-		printf("Error! There is an open bracket with no bracket to close it.\n");
+		printf("Error! There are %d open bracket with no bracket to close it.\n", open_brackets);
 	}
 	else if (open_brackets < 0) // the logic of this code should never allow this to happen
 	{
@@ -221,7 +226,7 @@ int main()
 	}
 	if (open_parentheses > 0)
 	{
-		printf("Error! there is an open parentheses with no parentheses to close it.\n");
+		printf("Error! there are %d open parentheses with no parentheses to close it.\n", open_parentheses);
 	}
 	else if (open_parentheses < 0) // the logic of this code should never allow this to happen
 	{
