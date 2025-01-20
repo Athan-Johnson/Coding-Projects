@@ -12,6 +12,8 @@
 // tolower(c): converts a char into a lower case char
 // isdigit(c): returns if a char is a digit or not
 
+enum bool { FALSE, TRUE };
+
 // this tells us where we are in the prefix. If it doesn't start with one we go straight to
 // end so we know to ignore that logic, but if we see a zero then we go to x, then if we see
 // an x we go to end. This helps to make sure that an x anywhere else in the string correctly
@@ -26,26 +28,41 @@ int main()
 {
 	// decalre variables
 	int ans = 0;
-	char c = ' ';
+	char c;
+	enum bool is_negative = FALSE; // these two are for tracking if the input is negative or not
+	enum bool is_first_char = TRUE; // it assumes that the minus will always be at the beginning, 
+					// such as -0xA but not 0x-A
+
 
 	// go through the input one by one
-	while ((c = getchar()) != EOF)
+	while ((c = getchar()) != EOF && c != '\n' && c != '\0')
 	{
-		if ((ans = htoi(ans, c)) > -1) // if this is false then we either errored or encountered \n or \0
-		{				// otherwise ans is already assigned in the if statement
-		}
-		else if (c == '\n' || c == '\0') // input over, print answer and end
+		// this is only relevant for the first iteration of the loop, to see if we have a 
+		// negative or positive number
+		if (is_first_char == TRUE && c == '-')
 		{
-			printf("%d\n", ans);
-			return 0;
+			is_negative = TRUE;
+		}
+		else if ((ans = htoi(ans, c)) > -1) // if this is false then there was an error
+		{
 		}
 		else // there must have been an error in the input
 		{
 			return 0;
 		}
+		// we put this here in the event that the first letter isn't a char no matter
+		// where in the if else logic we end up this should always end up being false
+		is_first_char = FALSE; // any minuses past this point should be considered an error
 	}
 
-	printf("%d\n", ans);
+	if (is_negative)
+	{
+		printf("-%d\n", ans);
+	}
+	else
+	{
+		printf("%d\n", ans);
+	}
 	return 0;
 }
 
@@ -55,11 +72,6 @@ int main()
 // right now this only works on positive inputs, an output of -2 means the string is over and -1 means an error
 int htoi(int num, char chr)
 {
-	// the input is over, just return the answer we were given
-	if (chr == '\n' || chr == '\0')
-	{
-		return num;
-	}
 	// we are at the start of the string and it starts with zero. then we move onto
 	// the next stage of the prefix and do nothing else. otherwise we jump to the end
 	// and begin reading the string
@@ -102,4 +114,5 @@ int htoi(int num, char chr)
 			}
 		}
 	}
+	return num;
 }
