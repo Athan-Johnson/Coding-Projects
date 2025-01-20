@@ -17,6 +17,7 @@
 // an x we go to end. This helps to make sure that an x anywhere else in the string correctly
 // returns an error
 enum prefix { zero, x, end };
+// declare a global variable here
 enum prefix pre = zero;
 
 int htoi(int num, char chr);
@@ -27,13 +28,18 @@ int main()
 	int ans = 0;
 	char c = ' ';
 
+	// go through the input one by one
 	while ((c = getchar()) != EOF)
 	{
-		if (htoi(ans, c) > -1)
-		{
-			ans = htoi(ans, c);
+		if ((ans = htoi(ans, c)) > -1) // if this is false then we either errored or encountered \n or \0
+		{				// otherwise ans is already assigned in the if statement
 		}
-		else
+		else if (c == '\n' || c == '\0') // input over, print answer and end
+		{
+			printf("%d\n", ans);
+			return 0;
+		}
+		else // there must have been an error in the input
 		{
 			return 0;
 		}
@@ -49,9 +55,10 @@ int main()
 // right now this only works on positive inputs, an output of -2 means the string is over and -1 means an error
 int htoi(int num, char chr)
 {
+	// the input is over, just return the answer we were given
 	if (chr == '\n' || chr == '\0')
 	{
-		return -2;
+		return num;
 	}
 	// we are at the start of the string and it starts with zero. then we move onto
 	// the next stage of the prefix and do nothing else. otherwise we jump to the end
