@@ -4,7 +4,7 @@
  * Output: 		the corresponding integer value
  * Author: Athan Johnson
  * Created: 1/19/2025
- * Modified:
+ * Modified: 1/20/2025
  */
 
 #include <stdio.h>
