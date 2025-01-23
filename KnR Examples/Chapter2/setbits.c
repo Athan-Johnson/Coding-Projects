@@ -18,7 +18,7 @@ void printBinary(unsigned x);
 
 int main ()
 {
-	int temp = setbits(X, P, N, Y);
+	unsigned temp = setbits(X, P, N, Y);
 
 	printf("Binary: ");
 	printBinary(temp);
