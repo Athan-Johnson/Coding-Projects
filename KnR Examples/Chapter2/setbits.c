@@ -8,7 +8,7 @@
 
 #include <stdio.h>
 
-int setbits(unsigned x, int p, int n, unsigned y);
+unsigned setbits(unsigned x, int p, int n, unsigned y);
 void printBinary(unsigned x);
 
 #define X 0b101010
@@ -25,7 +25,7 @@ int main ()
 	printf("Actual number: %d\n", temp);
 	}
 
-int setbits(unsigned x, int p, int n, unsigned y)
+unsigned setbits(unsigned x, int p, int n, unsigned y)
 {
 	// declare variables
 	unsigned rightmost_y = 0;
