@@ -20,6 +20,7 @@ int main()
 	printf("Binary: ");
 	printBinary(temp);
 	printf("Actual number: %u\n", temp);
+	return 0;
 }
 
 

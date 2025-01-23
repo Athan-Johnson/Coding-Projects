@@ -22,8 +22,9 @@ int main ()
 
 	printf("Binary: ");
 	printBinary(temp);
-	printf("Actual number: %d\n", temp);
-	}
+	printf("Actual number: %u\n", temp);
+	return 0;
+}
 
 unsigned setbits(unsigned x, int p, int n, unsigned y)
 {
